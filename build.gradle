@@ -1,0 +1,18 @@
+plugins {
+    id 'application'
+    id 'org.openjfx.javafxplugin' version '0.0.9'
+}
+
+javafx {
+    version = "15.0.1"
+    modules = [ 'javafx.controls', 'javafx.fxml', 'javafx.media', 'javafx.base', 'javafx.graphics', 'javafx.swing' ]
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: '*.jar')
+    compile group: 'org.fxmisc.richtext', name: 'richtextfx', version: '0.10.6'
+}
